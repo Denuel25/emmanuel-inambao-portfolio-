@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags for SEO and Open Graph -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Embedded Systems Portfolio: Innovative software solutions for hardware integration and control." />
+  <meta property="og:title" content="Embedded Systems Portfolio | Professor Emmanuel Inambao" />
+  <meta property="og:description" content="Explore cutting-edge software embedded system projects that integrate robust hardware control with intelligent software design." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Embedded+Systems" />
+  <meta property="og:url" content="https://www.example.com/portfolio/embedded-systems" />
+  <meta property="og:type" content="website" />
+
+  <!-- Title -->
+  <title>Embedded Systems Portfolio | Professor Emmanuel Inambao</title>
+  
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+Xen+1IsW7UgaXv6KYbSxUoF20b+VOzDZzRz9THD1l3Hf0kC2pVNHuL3VFEw+p+7D1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f7fa;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: #005A9C;
+      color: #fff;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      color: #cce6ff;
+      outline: none;
+    }
+
+    /* Header Section */
+    header {
+      background: linear-gradient(135deg, #005A9C, #007ACC);
+      color: #fff;
+      padding: 60px 20px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: #f5f7fa;
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Main Content */
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section {
+      margin-bottom: 60px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+    }
+    .section:nth-of-type(1) { animation-delay: 0.2s; }
+    .section:nth-of-type(2) { animation-delay: 0.4s; }
+    .section:nth-of-type(3) { animation-delay: 0.6s; }
+    .section:nth-of-type(4) { animation-delay: 0.8s; }
+    .section:nth-of-type(5) { animation-delay: 1s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .section h2 {
+      color: #005A9C;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Updated styles for images and videos */
+    .content img, .content video {
+      flex: 1 1 300px;       /* Minimum flex basis */
+      width: 100%;           /* Fill the container */
+      max-width: 400px;      /* Prevent excessive scaling */
+      height: auto;          /* Maintain aspect ratio */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    /* More subtle hover effect */
+    .content img:hover, .content video:hover {
+      transform: scale(1.02);
+    }
+    .content .text {
+      flex: 1 1 400px;
+      font-size: 1rem;
+      padding: 10px;
+      text-align: justify;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    /* Technology Stack Section */
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .tech-stack img {
+      height: 40px;
+      transition: transform 0.3s;
+    }
+    .tech-stack img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .testimonial {
+      margin-bottom: 15px;
+    }
+    .testimonial:last-child {
+      margin-bottom: 0;
+    }
+    .testimonial p {
+      font-style: italic;
+    }
+    .testimonial span {
+      display: block;
+      margin-top: 5px;
+      font-weight: 500;
+      color: #005A9C;
+    }
+
+    /* Modal Styles */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background: #fff;
+      padding: 30px;
+      max-width: 500px;
+      width: 90%;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+      animation: slideDown 0.5s;
+    }
+    @keyframes slideDown {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #333;
+    }
+    button {
+      background-color: #005A9C;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #00407A;
+    }
+    
+    /* Footer */
+    footer {
+      background: #333;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+    footer .social a {
+      margin: 0 10px;
+      color: #ccc;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+    footer .social a:hover {
+      color: #fff;
+    }
+    footer .tech-badges img {
+      height: 30px;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .content {
+        flex-direction: column;
+      }
+      .content .text {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav role="navigation" aria-label="Main Navigation">
+    <div class="logo">Embedded Systems</div>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#tech-stack">Tech Stack</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#help">Help</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Software Embedded Systems</h1>
+    <p>Integrating robust hardware control with intelligent software solutions</p>
+  </header>
+  
+  <!-- Main Content -->
+  <main>
+    <!-- Overview Section -->
+    <section class="section" id="overview">
+      <h2>Project Overview</h2>
+      <div class="content">
+        <img src="assets/img/portfolio/smart a.jfif" alt="Embedded System Diagram" loading="lazy" />
+        <div class="text">
+          <p>
+            This project demonstrates an integrated software embedded system designed to interact with various hardware components. The system is engineered for reliability and efficiency, enabling real-time monitoring, control, and data processing. It combines low-level firmware with high-level application logic to ensure seamless operations.
+          </p>
+          <p>
+            Whether controlling industrial machinery, managing IoT devices, or automating smart homes, our embedded system solutions are built to meet the rigorous demands of modern technology.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- How It Works Section -->
+    <section class="section" id="how-it-works">
+      <h2>How It Works</h2>
+      <div class="content">
+        <img src="assets/img/portfolio/emmanuel.jfif" alt="System Flowchart" loading="lazy" />
+        <div class="text">
+          <p>
+            The system architecture is divided into two primary layers:
+          </p>
+          <ul>
+            <li><strong>Firmware Layer:</strong> Interfaces directly with hardware, handling low-level tasks such as sensor data acquisition and actuator control.</li>
+            <li><strong>Application Layer:</strong> Runs on a higher-level operating system, processing data, managing user interfaces, and providing network connectivity.</li>
+          </ul>
+          <p>
+            Communication between these layers is facilitated by standardized protocols, ensuring robustness and scalability.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="section" id="features">
+      <h2>Key Features</h2>
+      <div class="content">
+        <div class="text">
+          <ul>
+            <li><strong>Real-Time Control:</strong> Immediate response to hardware signals and sensor inputs.</li>
+            <li><strong>Robust Communication:</strong> Secure and reliable protocols for data exchange.</li>
+            <li><strong>Scalability:</strong> Modular design that adapts to various hardware configurations.</li>
+            <li><strong>Energy Efficiency:</strong> Optimized firmware for low-power consumption.</li>
+          </ul>
+        </div>
+        <img src="assets/img/portfolio/smart a.jfif" alt="System Features" loading="lazy" />
+      </div>
+    </section>
+    
+    <!-- Technology Stack Section -->
+    <section class="section" id="tech-stack">
+      <h2>Technology Stack</h2>
+      <div class="content">
+        <div class="text">
+          <p>
+            Our embedded system solution utilizes a blend of modern programming languages, development tools, and hardware interfaces:
+          </p>
+          <div class="tech-stack">
+            <img src="https://img.shields.io/badge/C-00599C?logo=c&logoColor=white" alt="C Programming" title="C Programming" />
+            <img src="https://img.shields.io/badge/C++-00599C?logo=c%2B%2B&logoColor=white" alt="C++" title="C++" />
+            <img src="https://img.shields.io/badge/RTOS-333?logo=FreeRTOS&logoColor=white" alt="FreeRTOS" title="FreeRTOS" />
+            <img src="https://img.shields.io/badge/Linux-FF6600?logo=linux&logoColor=white" alt="Linux" title="Linux" />
+            <img src="https://img.shields.io/badge/IoT-339933?logo=iot&logoColor=white" alt="IoT" title="IoT" />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>"The embedded system architecture is remarkably robust and flexible, perfect for our industrial automation needs."</p>
+          <span>- Jordan Smith, Automation Engineer</span>
+        </div>
+        <div class="testimonial">
+          <p>"Innovative design and exceptional performance. This solution has significantly improved our IoT operations."</p>
+          <span>- Casey Lee, IoT Specialist</span>
+        </div>
+      </div>
+    </section>
+    
+   <!-- Floating WhatsApp Button -->
+<a href="https://wa.me/260973914432?text=Hello%20Emmanuel,%20I%20need%20assistance%20with%20the%20Smart%20Walking%20System." 
+   target="_blank" class="whatsapp-float">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<!-- Floating WhatsApp Button Styling -->
+<style>
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .whatsapp-float img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+</style>
+  
+  <!-- Modal for Help/Support -->
+  <div class="modal" id="helpModal" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close" onclick="closeModal()">&times;</button>
+      <h2 id="modalTitle">Support</h2>
+      <p>
+        For support or more information, please contact us at <a href="https://wa.me/260973914432?text=Hello%20Emmanuel,%20I%20need%20assistance%20with%20the%20Smart%20Walking%20System">support@emmanuelinambao.com</a> or visit our support page.
+      </p>
+      <button onclick="window.location.href="https://wa.me/260973914432?text=Hello%20Emmanuel,%20I%20need%20assistance%20with%20the%20Smart%20Walking%20System">Visit Support Page</button>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Professor Emmanuel Inambao. All rights reserved.</p>
+    <div class="social" aria-label="Social Media Links">
+      <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="tech-badges" aria-label="Technologies Used">
+      <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" />
+      <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3" />
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript" />
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script>
+    // Open the help modal
+    function openModal() {
+      document.getElementById('helpModal').style.display = 'flex';
+    }
+    
+    // Close the help modal
+    function closeModal() {
+      document.getElementById('helpModal').style.display = 'none';
+    }
+    
+    // Close modal when clicking outside modal content
+    window.addEventListener('click', function(event) {
+      const modal = document.getElementById('helpModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>

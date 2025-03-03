@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Emmanuel Inamba</title>
+  <title>Denuel</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -13,746 +12,1004 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: DevFolio
-  * Updated: Jan 09 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
 
-<body>
+<body class="index-page">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-      <h1 class="logo"><a href="index.html">DENUEL</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <img src="assets/img/logo.png" alt=""> 
+      <h1 class="sitename">Emmanuel Inambao</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="portfolio-details.html"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="service-details.html"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li class="dropdown"><a href="index.html"><i class="bi bi-menu-button navicon"></i> <span>See my tools</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="tools.html">check</a></li>
+            <li class="dropdown"><a href="contact.html"><span>CONTACT</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="portfolio-details.html">Deep Dropdown</a></li>
+                <li><a href="cyber.html">cyber security</a></li>
+                <li><a href="smart.html#testimonials">Smart walking</a></li>
+                <li><a href="system.html">Software engineer</a></li>
+                <li><a href="database.html#testimonials">Database</a></li>
+              </ul>
+            </li>
+        </li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Inambao</h2>
+        <p>I'm <span class="typed" data-typed-items="Software engineering,Website Developer,Freelancer, Cybersecurity">Tech</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Hello, I’m Emmanuel Inambao, a passionate programmer and IT specialist with a focus on software engineering, cybersecurity, and innovative technology solutions. With a diverse background in C++, Python, HTML/CSS, JavaScript, and systems programming, I’m committed to creating high-quality solutions that push the boundaries of what’s possible in tech. I aim to integrate technology with practical use cases to drive social change and efficiency.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>technology. &amp; Web Developer.</h2>
+            <p class="fst-italic py-3">
+              A brief introduction about Denuel Namz, his professional journey, and what excites him in the field of programming and technology.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1998</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.emmanuelinambao.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+260 973914432/0779690132</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Helen kaunda lusaka, Zambia</span></li>
                 </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>diploma:</strong> <span>certficate</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>denuelinambao@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Devloper:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+<b>Developer</b></br>
+As a developer, I specialize in creating innovative, efficient, and impactful solutions that integrate cutting-edge technologies. </br>My work spans full-stack development, embedded systems programming, and cybersecurity. </br>Over the years, I’ve gained experience in building responsive web applications, IoT systems, and automation tools tailored to address real-world challenges.
 
-    </div>
-  </header><!-- End Header -->
+   <br><b>What I Do</b></br> 
+-  Full-Stack Development: Building dynamic, responsive websites and applications with seamless frontend and backend integration. </br>
+-  Embedded Systems: Programming microcontrollers like Arduino and ESP32 for IoT-based solutions. </br> 
+-  Cybersecurity Enthusiast: Implementing secure coding practices and exploring ethical hacking techniques to enhance system security.  </br>
+-  Database Management: Designing and managing databases to ensure data integrity and scalability. </br> 
+-  Problem-Solving: Crafting solutions for complex challenges through algorithm development and debugging. </br> 
 
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Emmanuel Inambao</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="<i>C</i>ybersecurity,<i>D</i>eveloper, <i>P</i>ower Electrical"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+    <b>Languages & Tools</b></br>
+-   Programming Languages: C++, Python, JavaScript, HTML, CSS </br> 
+-   Frameworks & Libraries: React.js, Flask, Django  </br>
+-   Databases: MySQL, MongoDB  </br>
+-   Version Control: Git & GitHub  </br></br>
+-   IoT Technologies: Arduino, Raspberry Pi, sensors, and actuators  </br>
+-   Operating Systems: Linux (Kali Linux for penetration testing and development)  </br>
+<br>
+ My Development Philosophy</br>
+-   Clean Code: Writing maintainable, efficient, and scalable code.  </br>
+-   User-Centric Design: Ensuring intuitive and accessible interfaces for all users.  </br>
+-   Continuous Learning: Staying updated with the latest technologies and tools to deliver cutting-edge solutions.  </br>
+-   Collaboration: Thriving in team environments where innovation and problem-solving are at the forefront.  </br>
+</br>
+          </div>
         </div>
+
       </div>
-    </div>
-  </div><!-- End Hero Section -->
 
-  <main id="main">
+    </section><!-- /About Section -->
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> <span>emmanuuel mwale</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> <span>smart house</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> <span>24/7</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> <span>stronge</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Highlight technical skills that are relevant my background.</br></br>
+
+    Programming Languages: C++, Python, JavaScript, HTML/CSS</br>
+    Cybersecurity</br>
+    System Design & Architecture</br>
+    Full-stack Web Development</br>
+    Embedded Systems (e.g., Arduino, IoT)</br>
+    Databases (SQL, NoSQL)</br>
+    Mobile App Development<</br>
+    Git and Version Control</br>
+    Problem-solving and debugging</br>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>software engineering</span> <i class="val">69%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>
+<b>Professional Summary</b></br>
+I am an experienced IT specialist, software programmer, and electronic engineer with a strong foundation in technology and innovation. With expertise in web development, embedded systems, and cybersecurity, </b>I have consistently delivered efficient solutions tailored to real-world problems.</br> My passion for learning and problem-solving drives me to excel in every project I undertake.</br>
+
+   <b>Education  </b></br>
+- Diploma in IT </b></br>
+- Certificate Software Engineering  </b></br>
+- Certificate cyberscurity</b></br>
+- 
+<hr style="border: 1px solid #ccc; margin: 20px 0;">
+
+    <b>Work Experience</b></br>
+- Workshop Assistant </b></br>
+  <b><i>SECRETARY, ALMAJEED JANMOTORS CO.LTD<i/></b></br>
+6 December 2024 to March 2025</br>
+ Office operation: assist in the smooth functioning of the office tasks and 
+operations.</br>
+ Taking care of the company records and work</br>
+ Advertising company </br>
+ Maintaining company computers.</br>
+ Giving attending to clients</br>
+ Sells management</br>
+ Social media accounts management.</b>
+
+-  Project Manager</br> 
+   <b> Tap Code</b></br>
+  Managed project workflows, collaborated with teams, and successfully delivered innovative solutions to clients.</b>
+
+- </b>Clearing Agent</b></br>
+  Organized logistics and documentation, ensuring smooth import/export processes.<br/></b>
+<b>Technical Skills</b></br>
+-   Programming Languages:</br> Python, C++, JavaScript, HTML, CSS  </b>
+-   Web Development:</br> Full-stack development using React.js, Node.js, and Django  </b>
+-   Cybersecurity: </br>Proficient in ethical hacking and penetration testing using Kali Linux</b>  
+-   Database Management:</br> MySQL, MongoDB 
+-   IoT and Embedded Systems:</br> Arduino, Raspberry Pi, and sensor integration  </b> 
+-   Tools & Platforms: </br>Git/GitHub, Linux, Netlify, Vercel  </b> 
+  <br><b>Key Achievements</b></br>
+- Developed Smart Walking Stick for the Blind, featuring a camera,ultrasonic sensor, and Bluetooth integration.</b></br>  
+- Designed and implemented a <b>Smart Adaptor and a Smart House</b> for Little Birds.</br>
+- Built a telemedicine platform to improve access to healthcare in underserved communities.</br>  
+- Created a smart car for disaster management, utilizing ESP32 for autonomous navigation.  </br>
+
+   Soft Skills</br>
+- Leadership and Project Management </br>
+- Communication and Collaboration  </br>
+- Problem-Solving and Analytical Thinking  </br>
+<h1><b>Download Resume</b></h1>
+    <p>Click the button below to download my full resume in PDF format:</p>
+    <a href="EMMANUEL CV.pdf" class="download-btn" download>Download</a>
+
+      </div><!-- End Section Title -->
+
       <div class="container">
+
         <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Emmanuel Inambao</h4>
+              <p><em>I am a dynamic IT specialist, software programmer, and electronic engineer with a passion for creating innovative solutions that address real-world challenges. With expertise in full-stack web development, embedded systems, and cybersecurity, I have a proven track record of delivering impactful projects, such as IoT-based devices and automation tools.</br>
+
+Equipped with a strong background in physics, software engineering, and laboratory science, I combine analytical thinking with technical expertise to excel in diverse fields. My ability to adapt, solve problems, and collaborate effectively makes me a versatile professional ready to tackle complex challenges in technology and beyond.</br>
+
+I thrive in environments that prioritize innovation, teamwork, and learning, and I am committed to leveraging my skills</br> to contribute to meaningful advancements in technology.</em></p>
+              <ul>
+                <li>Helen Kaunda @100, Lusaka Zambia</li>
+                <li>(+260) 973914432</li>
+                <li>denuelinambao@gamil.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Diploma for information Technology</h4>
+              <h5>2022 - 2024</h5>
+              <p><em>Chalimbana Unversity</em></p>
+              <p>Networking and Systems Management:
+Proficient in configuring and managing networks, troubleshooting hardware/software issues, and ensuring system security.</br>
+Cybersecurity:</br>
+Experienced in ethical hacking, penetration testing, and vulnerability assessment using tools like Kali Linux.</br>
+Database Management:</br>
+Skilled in MySQL and MongoDB for creating, maintaining, and querying databases.</br>
+Software Development:</br>
+Expertise in developing efficient IT solutions and automation tools using Python and C++.</br>
+IT Support:</br>
+Provided helpdesk support for software and hardware issues, ensuring quick resolutions and minimal downtime.</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>cetificate for software enginreeing</h4>
+              <h5>six months </h5>
+              <p><em>Master Event Tech</em></p>
+              <p>Programming Languages: Mastery of Python, C++, JavaScript, HTML, and CSS for software and web development.</br>
+    Database Management: Developed skills in designing, managing, and querying databases (MySQL, MongoDB).</br>
+
+Notable Projects:</br>
+
+    Smart Walking Stick for the Blind: Designed and programmed a stick integrating sensors and Bluetooth techno</br>
+    E-commerce Platform for Small Businesses: Developed a full-stack platform with a loyalty and reward</br>
+
+Achievem</br>
+    Graduated with distinction for outstanding performance in both theoretical and practical assessments.
+    Demonstrated ability to work on end-to-end software projects independently and in a team.</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Project Manager</h4>
+              <h5>2024 june to 2024 November</h5>
+              <p><em>Experion, Lusaka, Zambia</em></p>
+              <ul>
+                <li>
+
+Tap Code</br>
+Dates TBD</br>
+
+    Implemented agile methodologies to streamline project workflows and improve team collaboration.</br></li>
+                <li>Oversaw the planning, execution, and delivery of tech projects, ensuring they met client requirements and deadlines. </li>
+                <li>
+    Coordinated cross-functional teams, resulting in a 20% increase in project delivery efficiency.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>IT Specialist and Programmer</h4>
+              <h5>Freelance</h5>
+              <p><em>ongoing</em></p>
+              <ul>
+                <li>Designed and developed responsive websites with backend functionality for clients using HTML, CSS, JavaScript, and Python.</li>
+                <li>Created IoT-based solutions, such as an Automated Greenhouse Monitoring System and a Smart Car for Disaster Management.</li>
+                <li>Delivered IT support services, troubleshooting hardware/software issues, and ensuring secure and efficient systems for clients.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p><b>1. Smart Walking Stick for the Blind</b></br>
+
+    Overview: A smart device designed to assist visually impaired individuals by detecting obstacles, measuring water levels, and providing real-time navigation using Bluetooth headphones.</br>
+    Key Features:</br>
+        Obstacle detection using an ultrasonic sensor.</br></br>
+        Integrated camera for object recogni</br>
+        Bluetooth connectivity for audio guidance.</br>
+    Technologies Used: Arduino, Python, Ultrasonic Sensors, Bluetooth.</br>
+    Impact: Enabled visually impaired individuals to navigate their environment independently and safely.</br>
+    Live Demo / Repository (Optional link to code or a video demonstration)</br>
+
+
+2.<b> Automated Greenhouse Monitoring System</b></br>
+    Overview: An IoT-enabled system for monitoring and controlling greenhouse conditions to improve crop health and yield.
+    Key Features:</br>
+        Real-time monitoring of temperature, humidity, and soil moisture.</br>
+        Automated watering and climate adjustment.</br>
+        User-friendly interface for remote control.</br>
+    Technologies Used: Arduino Uno, Python, DHT11 Sensor, IoT Protocols.</br>
+    Impact: Reduced manual labor by 50% and increased crop yield by automating environmental controls.</br>
+    Live Demo / Repository</br>
+
+
+3. <b>Smart Car for Disaster Management</b></br>
+    Overview: An autonomous vehicle capable of detecting colors (red and green), transporting objects, and following pre-defined paths during disaster management scenarios.</br>
+    Key Features:</br>
+        Color recognition for sorting objects.</br>
+        Line-following functionality for navigation.</br>
+        Real-time obstacle avoidance.</br>
+    Technologies Used: ESP32 Camera, Arduino, C Programming.</br></br>
+    Impact: Automated critical disaster response tasks, improving efficiency and safety.</br>
+    Live Demo / Repository</br>
+
+
+4.<b> E-commerce Platform for Small Businesses</b></br>
+    Overview: A responsive web application with a loyalty and rewards program to support small businesses in Zambia.</br>
+    Key Features:</br>
+        User authentication and product management.</br>
+        Integrated local payment methods (Airtel Money, MTN Money, Zamtel Money).</br>
+        Social engagement tools for customer retention.</br>
+    Technologies Used: HTML, CSS, JavaScript, Python (Django), MySQL.</br>
+    Impact: Empowered small businesses by increasing their online visibility and improving customer engagement.</br>
+    Live Demo / Repository</br>
+
+
+5.<b> Telemedicine Platform</b></br>
+    Overview: A platform to provide remote healthcare services, especially for underserved and rural communities.</br>
+    Key Features:</br>
+        Secure video consultations and appointment scheduling.</br>
+        Patient records management and prescription delivery.</br>
+    Technologies Used: React, Node.js, MongoDB.</br>
+    Impact: Bridged the gap in healthcare accessibility for remote populations.</br>
+    Live Demo / Repository</br>
+
+
+6. <b>Car Dealer Website</b></br>
+    Overview: A fully functional website for car dealerships with features for inventory management and vehicle search.</br>
+    Key Features:</br>
+        Advanced search and filtering options.</br>
+        Dynamic inventory updates.</br>
+        User-friendly dashboard for dealership staff.</br>
+    Technologies Used: HTML, CSS, JavaScript, PHP, MySQL.</br>
+    Impact: Improved the browsing and purchasing experience for customers while streamlining operations for dealerships.</br>
+    Live Demo / Repository
+
+</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Smart House</li>
+            <li data-filter=".filter-product">Projects</li>
+            <li data-filter=".filter-branding">Website</li>
+            <li data-filter=".filter-books">Certificate</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-1.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Smart House</h4>
+                  <p>Smart House for Little Birds:
+Explanation & Benefits</p>
+                  <a href="assets/img/portfolio/app-1.jfif" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-1.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>here we go again </h4>
+                  <p>working for the future</p>
+                  <a href="assets/img/portfolio/product-1.jfif" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="denuel1.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-1.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>smart</h4>
+                  <p>do everything with love and keep moving</p>
+                  <a href="assets/img/portfolio/branding-1.jfif" title="project 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="denuel.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-1.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>let the blind walk alone</h4>
+                  <p>life is full of ips and downs</p>
+                  <a href="assets/img/portfolio/books-1.jfif" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="secode%20detail.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-2.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>let  small brids be safe</h4>
+                  <p>love start from small things</p>
+                  <a href="assets/img/portfolio/app-2.jfif" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="denuel3.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-2.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>work like you are slave</h4>
+                  <p>nor matter how far it maybe it will come to past</p>
+                  <a href="assets/img/portfolio/product-2.jfif" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="denuel4.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-2.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Green house</h4>
+                  <p>buiild for everyone and let love lead </p>
+                  <a href="assets/img/portfolio/branding-2.jfif" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="denuel5.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-2.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Smart walking strick</h4>
+                  <p>from small to big vision</p>
+                  <a href="assets/img/portfolio/books-2.jfif" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="denuel6.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-3.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>web developing</h4>
+                  <p>making money from web developing</p>
+                  <a href="assets/img/portfolio/app-3.jfif" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="denuel7.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-3.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>rate my work</h4>
+                  <p>your comment will mean alot to my life and work</p>
+                  <a href="assets/img/portfolio/product-3.jfif" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="denuel8.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-3.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Software enginreeing</h4>
+                  <p>its started as adream now i am liveing with it</p>
+                  <a href="assets/img/portfolio/branding-3.jfif" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="denuel9.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-3.jfif" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Cybersecurity</h4>
+                  <p>we protect the helpless on social media</p>
+                  <a href="assets/img/portfolio/books-3.jfif" title="Cybersecurity" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="denuel9.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p><b>Why Choose Me?</b></br>
+
+    Expertise: <br>Years of experience in IT, software engineering, and embedded systems development.</br>
+    Customized Solutions: Services tailored to meet the unique needs of each client or project.</br>
+    Reliability:<br> Dedicated to delivering high-quality results on time and within budget.</br>
+    Support: <br>I offer ongoing support and maintenance for all completed projects.</br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link"> Web Development</a></h4>
+              <p class="description">Designing and building responsive, user-friendly websites.</br>
+Expertise in front-end and back-end development using HTML, CSS, JavaScript, Python, and PHP.</br>
+Custom e-commerce platforms, blogs, and portfolio websites.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Software Development</a></h4>
+              <p class="description">Developing efficient and scalable software solutions tailored to your needs.</br>
+Specialized in automation, IoT-based systems, and desktop applications.</br>
+Proficient in programming languages like Python, C++, and JavaScript.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">IT Consulting</a></h4>
+              <p class="description">Providing expert advice on IT infrastructure, system upgrades, and optimization.</br>
+Helping businesses implement secure and reliable technology solutions.</br>
+Offering support for cloud services, cybersecurity, and network management.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">IoT and Embedded Systems</a></h4>
+              <p class="description">Designing smart systems, including automated greenhouses, smart cars, and wearable devices.</br>
+Proficient in Arduino and ESP32 development for IoT projects.</br>
+Implementing innovative solutions for real-world challenges.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Cybersecurity Services</a></h4>
+              <p class="description">Conducting vulnerability assessments and penetration testing to secure systems.</br>
+Implementing best practices for data protection and privacy.</br>
+Providing guidance on ethical hacking and cybersecurity strategies.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Technical Support and Maintenance</a></h4>
+              <p class="description">Offering IT helpdesk services and troubleshooting support.</br>
+Ensuring smooth performance of systems through regular updates and maintenance.</br>
+Providing remote and on-site support to solve technical issues efficiently.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What Clients Say About Me</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"Emmanuel's automated greenhouse monitoring system has revolutionized the way we manage our crops. The real-time monitoring and automated adjustments have not only saved us time but also significantly boosted our yield. His expertise and dedication are truly commendable!"</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Joseph Mwansa</h3>
+                <h4>Ceo &amp; Commercial Farmer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"The inventory management system Emmanuel created for our car dealership has streamlined operations and boosted sales. He communicated clearly throughout the project and delivered on time."</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Katende Muhamuda</h3>
+                <h4> Car Dealership Manager</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"Working with Emmanuel on the telemedicine platform was a seamless experience. His attention to detail and ability to translate our needs into a functional platform were outstanding. The system has improved access to healthcare for rural populations."</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Dr. Chanda Mbewe</h3>
+                <h4>Healthcare Provider</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The smart walking stick project developed by Emmanuel has transformed the lives of visually impaired individuals in our community. It’s an innovative and practical solution that exceeded our expectations.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>John Banda</h3>
+                <h4>NGO Coordinator</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Emmanuel delivered an exceptional e-commerce platform for our business. The integration of local payment methods and a rewards program has greatly increased customer engagement. His professionalism and problem-solving skills are unmatched!".</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Mary Zulu, Business Owner</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Helen Kaunda, Lusaka, Zambia</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+260 973 914 432</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>denuelinambao@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://maps.google.com/maps?q=helen kaunda,lusaka zambia&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">MY LOCATION+</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">helen kaunda</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
                 <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span><br>INAMBAO EMMANUEL</br></span></p>
-                        <p><span class="title-s">Profile: </span> <span><br>full stack developer</br></span></p>
-                        <p><span class="title-s">Email: </span> <span>denuelinambao@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span><br>(+260) 779690132</br></span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skill</p>
-                    <span>Cybersecurity</span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Developer</span> <span class="pull-right">75%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Power Electrical</span> <span class="pull-right">50%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Web Design/span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
                 </div>
+
                 <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      <br>I am an engineering in the following</br><br>Power Electrical</br><br>Developer</br><br>Cybersecurity</br>
-                    </p>
-                    <p class="lead">
-                      i belive in programming it become part of my life. 
-                    </p>
-                    <p class="lead">
-                     life is really cool when you know what u are doing
-                    </p>
-                  </div>
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
                 </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
               </div>
-            </div>
-          </div>
+            </form>
+          </div><!-- End Contact Form -->
+
         </div>
+
       </div>
-    </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-                I offere the following service.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Design</h2>
-                <p class="s-description text-center">
-                  I Design Website,Apllications,E-Commerce and many more
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-center">
-                  i Developer Responsive Website,Apllications,E-Commerce, Portfilio, and Wedding Website and many more 
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Software Engineering</h2>
-                <p class="s-description text-center">
-                  Any you think of have in your house and anything you want to be used as your help i build for you. enjoy the real world of technology.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">cyber security</h2>
-                <p class="s-description text-center">
-                  You feel unsafe in you company maybe someone might be spying on your data i am here to offering total security..you information is safe with me
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Power Electrical</h2>
-                <p class="s-description text-center">
-                  i instainll anything you think of diner lamp,security camera,stove and eleritical kitty
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Marketing Services</h2>
-                <p class="s-description text-center">
-                  i am goood in marketing i post things that will make your customer to like it for your brand to grow up within weeks.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Services Section -->
+    </section><!-- /Contact Section -->
 
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">AWARD WON</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Counter Section -->
+  </main>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <p class="subtitle-a">
-                <legend>welcome to my portflio were i express my work</legend>.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">smart house project</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">software engineering</span> / <span class="w-date">18 Sep. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">team work</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">power electrical</span> / <span class="w-date">22 Sep. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">TME workshop</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">software engineering</span> / <span class="w-date">18 Sep. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">project 2</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">software</span> / <span class="w-date">3 Aug. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">cybersecurity at the phoenix researche institute</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Nov. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">After a meeting the ministry of Education</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Education</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <footer id="footer" class="footer position-relative light-background">
 
-        </div>
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="apple-touch-icon.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">John</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        my work mate who help me in my work and designing.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Shannon</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        the guy who always advice me to under life of programmer
-                                     <BR>LOVE YOU WORK.</BR>
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div> -->
-          </div>
-        </div>
-      </div>
-    </div><!-- End Testimonials Section -->
-
-    <!-- ======= Blog Section ======= -->
-    <section id="blog" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Blog
-              </h3>
-              <p class="subtitle-a">
-                welcome to my Blog.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">relationship</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about life</a></h3>
-                <p class="card-description">
-                  I my best friend in whom i find peace and joy. knowning or meeting in my life it one of my blessing ever i had a friend i share with everything. 
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Denuel</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">team work</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about friendship</a></h3>
-                <p class="card-description">
-                  having friends and sharing idea when it comes to work it one of my bless from God cause we joke but when it comes to work as a team workl we do alot of stuff in few seconds
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Denuel</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 20 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about workplace</a></h3>
-                <p class="card-description">
-                  i love doing my work in the room and it makes me think beyound my capitay with playing music in the background.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Denuel</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 30 min
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Blog Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message Us
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        for faster responded call me or email me.. for more of my work following the following platforms.
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> 100/22 HELEN KAUNDA, HK 100</li>
-                        <li><span class="bi bi-phone"></span> (+260) 7796-90132</li>
-                        <li><span class="bi bi-envelope"></span> denuelinambao@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Emmanuel</strong>. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-            -->
-              Designed by <a href="https://bootstrapmade.com/">DENUEL</a>
-            </div>
-          </div>
-        </div>
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">DENUEL</strong> <span>All Rights Reserved.2025</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://denuel.com/">Denuel</a>
       </div>
     </div>
-  </footer><!-- End  Footer -->
 
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>

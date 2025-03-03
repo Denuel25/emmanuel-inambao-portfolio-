@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Database Portfolio: SQL & NoSQL expertise in scalable, high-performance solutions.">
+  <title>Database Portfolio | Professor Emmanuel Inambao</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #F5F7FA; color: #333; }
+    
+    /* Navigation */
+    nav {
+      background: linear-gradient(135deg, #6A0DAD, #FF7F00);
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo { font-size: 1.5rem; font-weight: 600; }
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav ul li a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+    nav ul li a:hover { color: #F5F7FA; }
+    
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #6A0DAD, #1E90FF);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 { font-size: 2.8rem; }
+    header p { font-size: 1.2rem; }
+    
+    /* Section Styling */
+    main { padding: 40px 20px; max-width: 1000px; margin: auto; text-align: center; }
+    .section h2 { color: #6A0DAD; font-size: 2rem; margin-bottom: 20px; }
+    .content { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center; }
+    .content img {
+      flex: 1 1 300px;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      cursor: pointer;
+      loading: lazy;
+    }
+    .content img:hover { transform: scale(1.05); }
+    .content .text {
+      flex: 1 1 400px;
+      font-size: 1rem;
+      padding: 10px;
+      text-align: justify;
+    }
+    
+    /* Footer */
+    footer {
+      background: #6A0DAD;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      padding: 15px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease-in-out;
+    }
+    .whatsapp-float img {
+      width: 50px; /* Adjusted size */
+      height: 50px;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); }
+
+    /* Social Icons */
+    .social-icons a {
+      color: #fff;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      color: #F5F7FA;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Database Portfolio</div>
+    <ul>
+      <li><a href="#sql">SQL Databases</a></li>
+      <li><a href="#nosql">NoSQL Databases</a></li>
+      <li><a href="#use-cases">Use Cases</a></li>
+    </ul>
+  </nav>
+  
+  <header>
+    <h1>SQL & NoSQL Database Expertise</h1>
+    <p>Optimized storage, queries, and architecture for performance and scalability.</p>
+  </header>
+  
+  <main>
+    <section class="section" id="sql">
+      <h2>SQL Databases</h2>
+      <div class="content">
+        <img src="assets/img/portfolio/product-1.jfif" alt="SQL Database">
+        <div class="text">
+          <p>Experience in designing relational database schemas, writing optimized queries, and implementing security best practices using:</p>
+          <ul>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>Microsoft SQL Server</li>
+            <li>SQLite</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section" id="nosql">
+      <h2>NoSQL Databases</h2>
+      <div class="content">
+        <img src="assets/img/portfolio/books-1.jfif" alt="NoSQL Database">
+        <div class="text">
+          <p>Expertise in handling unstructured and semi-structured data using scalable NoSQL databases:</p>
+          <ul>
+            <li>MongoDB</li>
+            <li>Redis</li>
+            <li>Firebase</li>
+            <li>Apache Cassandra</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section" id="use-cases">
+      <h2>Use Cases</h2>
+      <p>Databases are optimized for different applications:</p>
+      <ul>
+        <li><strong>E-commerce:</strong> SQL for transactions, NoSQL for product catalogs.</li>
+        <li><strong>Big Data & Analytics:</strong> NoSQL for fast processing.</li>
+        <li><strong>Social Media Apps:</strong> NoSQL for dynamic content storage.</li>
+        <li><strong>Enterprise Applications:</strong> SQL for structured data security.</li>
+      </ul>
+    </section>
+  </main>
+  
+  <a href="https://wa.me/260973914432?text=Hello%20Emmanuel,%20I%20need%20assistance%20with%20the%20Smart%20Walking%20System." target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/emmanuel-inambao" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/emmanuelinambao" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p>&copy; 2025 Emmanuel Inambao | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
